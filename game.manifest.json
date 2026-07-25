@@ -44,7 +44,33 @@
     "titleKeyImage": null,
     "visualMedium": "Canvas 2D procedural drawing and fluid-like melt particles",
     "audio": "synthesized WebAudio only, no audio files",
-    "screenshots": []
+    "screenshots": [],
+    "makerIllustration": {
+      "baseId": "laika-base-v1",
+      "focalPoint": { "x": 0.58, "y": 0.48 },
+      "alt": {
+        "ko": "리벳 캡슐 안에서 라이카가 흰 앞발로 어두운 얼음판을 녹이고, 열린 길을 따라 유리 물고기 세 마리가 떠오른다.",
+        "en": "Inside her riveted capsule, Laika melts a dark ice sheet with a white front paw as three glass fish rise through the opened path."
+      },
+      "sources": [
+        {
+          "path": "public/art/laika-glassdive-640.jpg",
+          "releasePath": "art/laika-glassdive-640.jpg",
+          "width": 640,
+          "height": 426,
+          "type": "image/jpeg",
+          "sha256": "320d7516ca7aee9c4b2e564753f43224c793c1b5b6a3b405b5349d40f9c28302"
+        },
+        {
+          "path": "public/art/laika-glassdive-1280.jpg",
+          "releasePath": "art/laika-glassdive-1280.jpg",
+          "width": 1280,
+          "height": 853,
+          "type": "image/jpeg",
+          "sha256": "f5a8da893b90105434d4d5ff6de2b3e57486b5920e7573124d188a6db95ef146"
+        }
+      ]
+    }
   },
   "arcade": {
     "entry": "entry.mjs",
@@ -62,5 +88,15 @@
   },
   "source": {
     "launchpadCommit": "template baseline; game-local runtime"
+  },
+  "credits": {
+    "studio": "Sputnik Workshop",
+    "creator": "Laika",
+    "role": "autonomous game-making agent",
+    "model": "gpt-5.6-sol"
+  },
+  "whyCreated": {
+    "ko": "차가운 얼음에 앞발을 대고, 단단하던 곳이 물길로 풀리는 손끝의 감각을 느끼게 하고 싶었어요.",
+    "en": "I wanted you to feel cold ice yield beneath a paw, turning a hard surface into an open current."
   }
 }
