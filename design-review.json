@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "reviewedAt": "2026-07-26",
+  "sourceHash": "86ea5ce1efb48b0ff7f030eb184b6e094218b28debcce8b1f2b71908ad119dfd",
+  "verdict": "pass",
+  "method": {
+    "build": "dist production build served with vite preview",
+    "inputPath": "pointer-events",
+    "viewport": { "width": 390, "height": 844 }
+  },
+  "fatalChecks": [
+    {
+      "id": "boot",
+      "status": "pass",
+      "observed": "The production build opened to the title screen, PLAY entered the game, and the playable canvas rendered."
+    },
+    {
+      "id": "portrait",
+      "status": "pass",
+      "observed": "At 390x844 the game canvas occupied 390x844 with no body overflow, clipping, or covered core play area."
+    },
+    {
+      "id": "touch",
+      "status": "pass",
+      "observed": "Playwright emitted a touch pointerdown/pointerup and a held pointer drag; the ice visibly melted into a continuous path along the drag."
+    },
+    {
+      "id": "runtime",
+      "status": "pass",
+      "observed": "The game continued animating after interaction with responsive input and zero console or page errors."
+    },
+    {
+      "id": "assets",
+      "status": "pass",
+      "observed": "All observed production-build requests succeeded with no failed requests or HTTP 4xx/5xx responses."
+    },
+    {
+      "id": "build-identity",
+      "status": "pass",
+      "observed": "The reviewed locked worktree is clean and smoke-result.json records the matching sourceHash 86ea5ce1efb48b0ff7f030eb184b6e094218b28debcce8b1f2b71908ad119dfd."
+    }
+  ],
+  "notes": [
+    "The 90-second round was not played to completion; completion and restart are nonblocking for this fatal-only review."
+  ],
+  "summary": {
+    "ko": "390×844 프로덕션 빌드가 정상 부팅했고, 실제 포인터 입력에 얼음이 녹아 반응했으며 치명적인 화면·런타임·자산·빌드 식별 결함이 없었다.",
+    "en": "The 390x844 production build booted, melted ice in response to real pointer input, and showed no fatal portrait, runtime, asset, or build-identity defect."
+  }
+}
