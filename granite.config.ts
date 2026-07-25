@@ -1,9 +1,9 @@
 import { defineConfig } from '@apps-in-toss/web-framework/config'
 
 export default defineConfig({
-    appName: 'gametemplate',
+    appName: 'glassdive',
     brand: {
-        displayName: '게임 템플릿',
+        displayName: '유리잠수',
         primaryColor: '#c9a227',
         icon: 'https://static.toss.im/appsintoss/29597/83bbb2f9-b597-4ae5-9780-132a89d6cadd.png',
     },

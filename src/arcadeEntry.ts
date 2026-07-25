@@ -43,6 +43,7 @@ export function mountGame(options: Options) {
     shell.appendChild(host)
     options.root.appendChild(shell)
     const game = new SampleGame()
+    game.setLocale(options.locale ?? 'ko')
     void game.mount(host, {
         onGameOver: (result) => emit('ended', { runId: String(run), result }),
     }).then(() => {

@@ -1,37 +1,37 @@
 {
   "schemaVersion": 1,
-  "slug": "gametemplate",
-  "appId": "com.example.gametemplate",
+  "slug": "glassdive",
+  "appId": "com.sputnikworkshop.glassdive",
   "version": "0.0.1",
-  "releaseDate": "TODO-YYYY-MM-DD",
+  "releaseDate": "2026-07-26",
   "title": {
-    "ko": "게임 템플릿",
-    "en": "Game Template"
+    "ko": "유리잠수",
+    "en": "Glass Dive"
   },
   "tagline": {
-    "ko": "TODO 한 줄 소개",
-    "en": "TODO one line pitch"
+    "ko": "손끝의 온기로 얼음을 녹여 유리 물고기의 길을 연다.",
+    "en": "Melt the ice with your fingertip and open a path for glass fish."
   },
   "description": {
-    "ko": "TODO 규칙과 목표, 실패 조건을 중립 문체로 적는다.",
-    "en": "TODO describe the rules, the goal, and the failure condition in neutral prose."
+    "ko": "90초 동안 얼음에 통로를 내어 떠오르는 유리 물고기 세 마리를 수면까지 안내한다. 장애물에 부딪힌 물고기는 깨지며, 모두 깨지면 즉시 끝난다.",
+    "en": "During a 90-second round, melt passages through the ice and guide three rising glass fish to the surface. A fish breaks on an obstacle; the round ends immediately if all three break."
   },
   "controls": {
     "ko": {
-      "primary": "TODO 주 입력이 무엇을 하는지",
-      "keyboard": "TODO 키보드 대체 입력",
+      "primary": "화면을 길게 누르고 끌어 얼음을 녹인다.",
+      "keyboard": "마우스를 누른 채 끌어 얼음을 녹인다.",
       "restart": "결과 화면을 눌러 다시 시작한다."
     },
     "en": {
-      "primary": "TODO what the primary input does",
-      "keyboard": "TODO keyboard alternative",
+      "primary": "Press and drag to melt the ice.",
+      "keyboard": "Hold and drag the mouse to melt the ice.",
       "restart": "Tap the result screen to start again."
     }
   },
   "session": {
     "typicalSeconds": 90,
     "maxSeconds": 180,
-    "failureBudget": 3
+    "failureBudget": 0
   },
   "display": {
     "designWidth": 390,
@@ -41,8 +41,8 @@
   },
   "supportedLocales": ["ko", "en"],
   "media": {
-    "titleKeyImage": "public/art/title-key.jpg",
-    "visualMedium": "TODO 시각 매체",
+    "titleKeyImage": null,
+    "visualMedium": "Canvas 2D procedural drawing and fluid-like melt particles",
     "audio": "synthesized WebAudio only, no audio files",
     "screenshots": []
   },
@@ -61,6 +61,6 @@
     ]
   },
   "source": {
-    "launchpadCommit": "TODO-launchpad-sha"
+    "launchpadCommit": "template baseline; game-local runtime"
   }
 }
